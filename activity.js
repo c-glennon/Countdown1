@@ -1,3 +1,6 @@
+
+/* Beginner Challenge */
+
 /* Do all of these using proper ES6 syntax
 Using the following array of objects,
 (1) Write an arrow function that adds a new entry to bookList
@@ -10,6 +13,8 @@ const bookList = [
     { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
     { title: "Moby Dick", author: "Herman Melville" },
   ];
+
+  /* Intermediate Challenge */
   
   /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
     number is positive or negative using a ternary operator (assume the number will never be zero) */
@@ -22,6 +27,8 @@ const bookList = [
     number from 1 up to that number
     ex. sumUp(7) = 28 */
   
+  /* Harder Challenge */
+
   /* (7) Write an arrow function that converts the temperature from Celsius to Fahrenheit and then tells
     me what I should wear accordingly */
   
@@ -42,8 +49,10 @@ const bookList = [
     { firstName: "Jackson", lastName: "Wolf", gpa: 4.0 },
     { firstName: "Jared", lastName: "Nguyen", gpa: 4.0 },
   ];
-  
-  /* (10) Write a function that solves the "every number eventually equals 4" puzzle. The output should be
+
+  /* Hardest Challenge (Don't do this without completing harder challenges) */
+
+  /* Write a function that solves the "every number eventually equals 4" puzzle. The output should be
     an array of the path you took to make it equal four
     ex/ [11, 6, 3, 5, 4], [19, 8, 5, 4] or [252, 18, 8, 5, 4]
     For context: https://puzzling.stackexchange.com/questions/29137/every-number-eventually-equals-4 */
