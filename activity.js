@@ -57,32 +57,31 @@ const posOrNeg = (num) => {
   the week it is i.e. if it's Monday, print "good luck" or wednesday print "hump day" or friday print "party" */
 
 const dailyMessage = (day) => {
-  if(typeof day !== "string"){
-    return "invalid day";
-  }
   switch(day){
-    case day === "Monday":
+    case "Monday":
       console.log("good luck")
       break;
-    case day === "Tuesday":
+    case "Tuesday":
       console.log("Taco Tuesday!")
       break;
-    case day === "Wednesday":
+    case "Wednesday":
       console.log("hump day!!")
       break;
-    case day === "Thursday":
+    case "Thursday":
       console.log("Almost Friday")
       break;
-    case day === "Friday":
+    case "Friday":
       console.log("party time")
       break;
-    case day === "Saturday":
+    case "Saturday":
       console.log("Who doesn't love Saturday")
       break;
-    case day === "Sunday":
+    case "Sunday":
       console.log("lazy Sunday")
       break;
-  } 
+    default:
+      console.log("Invalid day")
+  }
 }
   
 /* (6) Write an arrow function that takes in a number, and uses a for loop to return the sum of every
@@ -103,32 +102,29 @@ const sumUpTo = (num) => {
     me what I should wear accordingly */
 
 const whatToWear = (temp) => {
-  let fTemp = (1.8*temp) + 32
-  switch(fTemp){  
-    case fTemp >= 90:
+  let fTemp = (1.8*temp) + 32 
+    if(fTemp>= 90){
       console.log("Bathing suit!");
-      break;
-    case fTemp >= 80:
+    }
+    else if(fTemp >= 80){
       console.log("Shorts and t-shirt");
-      break;
-    case fTemp >= 70:
+    }
+    else if(fTemp >= 70){
       console.log("Pants and t-shirt"); 
-      break;
-    case fTemp >= 60:
+    }
+    else if(fTemp >= 60){
       console.log("Pants and long-sleeve shirt");
-      break;
-    case fTemp >= 50:
+    }
+    else if(fTemp >= 50){
       console.log("Pants and sweater");
-      break;
-    case fTemp >= 40:
+    }
+    else if(fTemp >= 40){
       console.log("Pants and jacket");
-      break;
-    case fTemp < 40:
+    }
+    else
       console.log("Bundle Up!")
-      break;
-  }
 }
-  
+
 /* (8) Write a function that takes in an array and prints out the amount of truthy values in that array
   using .forEach() */
   
@@ -302,5 +298,3 @@ const eventuallyFour = (num, path) => {
 
 // need to call the function with an empty array 
 // eg: console.log(eventuallyFour(1234, []))
-
-console.log(eventuallyFour(11, []))
